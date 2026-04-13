@@ -107,6 +107,40 @@ h1 {
     padding: 0.4rem 0;
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.image-card {
+    background: rgba(23, 19, 38, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image-card__preview {
+    min-height: 170px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+                radial-gradient(circle at top left, rgba(255, 92, 173, 0.18), transparent 35%),
+                radial-gradient(circle at bottom right, rgba(130, 200, 255, 0.12), transparent 40%);
+    color: #eef2ff;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.image-card p {
+    margin: 0;
+    padding: 1rem;
+    color: #ced4e1;
+    background: rgba(6, 5, 10, 0.85);
+}
+
 .footer {
     margin-top: auto;
     padding: 1.75rem 1.5rem 2rem;
